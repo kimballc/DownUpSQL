@@ -12,6 +12,7 @@ namespace DownUpSQL
 {
     class Program
     {
+
         static void Main(string[] args)
         {
             //sentinel variable
@@ -141,6 +142,8 @@ namespace DownUpSQL
 
         static void DownloadData()
         {
+            string connStr = @"Data Source=USEM-527643\GENOTYPE;Initial Catalog=Test1;Integrated Security=True;User ID=Application;Password=Test1234!";
+
             bool tryAgain = true;
             byte filetype;
             string filepath;
@@ -168,7 +171,7 @@ namespace DownUpSQL
                         Console.Write("Please enter the file path to download to >> ");
                         filepath = Console.ReadLine();
 
-                        using (SqlConnection db = new SqlConnection(@"Data Source=USEM-527643\GENOTYPE;Initial Catalog=Test1;Integrated Security=True;User ID=Application;Password=Test1234!"))
+                        using (SqlConnection db = new SqlConnection(connStr))
                         {
                             db.Open();
 
@@ -224,7 +227,7 @@ namespace DownUpSQL
 
                             excelWorksheet.Cells[headerRange].LoadFromArrays(headerRow);
 
-                            using (SqlConnection db = new SqlConnection(@"Data Source=USEM-527643\GENOTYPE;Initial Catalog=Test1;Integrated Security=True;User ID=Application;Password=Test1234!"))
+                            using (SqlConnection db = new SqlConnection(connStr))
                             {
                                 db.Open();
 
@@ -319,6 +322,7 @@ namespace DownUpSQL
 
         static void UploadDataFile()
         {
+            string connStr = @"Data Source=USEM-527643\GENOTYPE;Initial Catalog=Test1;Integrated Security=True;User ID=Application;Password=Test1234!";
             string fname;
             string lname;
             DateTime dob;
@@ -376,7 +380,7 @@ namespace DownUpSQL
                         switch (hasDuplicate)
                         {
                             case 0:
-                                using (SqlConnection db = new SqlConnection(@"Data Source=USEM-527643\GENOTYPE;Initial Catalog=Test1;Integrated Security=True;User ID=Application;Password=Test1234!"))
+                                using (SqlConnection db = new SqlConnection(connStr))
                                 {
                                     Console.Write("Enter the file path of the .csv file containing the data to upload >> ");
                                     filepath = Console.ReadLine();
@@ -435,7 +439,7 @@ namespace DownUpSQL
                                 break;
 
                             case 1:
-                                using (SqlConnection db = new SqlConnection(@"Data Source=USEM-527643\GENOTYPE;Initial Catalog=Test1;Integrated Security=True;User ID=Application;Password=Test1234!"))
+                                using (SqlConnection db = new SqlConnection(connStr))
                                 {
                                     Console.Write("Enter the file path of the .csv file containing the data to upload >> ");
                                     filepath = Console.ReadLine();
@@ -526,7 +530,7 @@ namespace DownUpSQL
                         switch (hasDuplicate)
                         {
                             case 0:
-                                using (SqlConnection db = new SqlConnection(@"Data Source=USEM-527643\GENOTYPE;Initial Catalog=Test1;Integrated Security=True;User ID=Application;Password=Test1234!"))
+                                using (SqlConnection db = new SqlConnection(connStr))
                                 {
                                     Console.Write("Enter the file path of the .csv file containing the data to upload >> ");
                                     filepath = Console.ReadLine();
@@ -590,7 +594,7 @@ namespace DownUpSQL
                                 break;
 
                             case 1:
-                                using (SqlConnection db = new SqlConnection(@"Data Source=USEM-527643\GENOTYPE;Initial Catalog=Test1;Integrated Security=True;User ID=Application;Password=Test1234!"))
+                                using (SqlConnection db = new SqlConnection(connStr))
                                 {
                                     Console.Write("Enter the file path of the .csv file containing the data to upload >> ");
                                     filepath = Console.ReadLine();
@@ -666,6 +670,8 @@ namespace DownUpSQL
 
         static void UploadDataLine()
         {
+            string connStr = @"Data Source=USEM-527643\GENOTYPE;Initial Catalog=Test1;Integrated Security=True;User ID=Application;Password=Test1234!";
+
             string fname;
             string lname;
             DateTime dob;
@@ -743,7 +749,7 @@ namespace DownUpSQL
             {
                 Console.Write("Uploading...");
 
-                using (SqlConnection db = new SqlConnection(@"Data Source=USEM-527643\GENOTYPE;Initial Catalog=Test1;Integrated Security=True;User ID=Application;Password=Test1234!"))
+                using (SqlConnection db = new SqlConnection(connStr))
                 {
                     db.Open();
                     string s = "INSERT INTO Employees (FName, LName, DOB, Years_Employed, Active_Employee) VALUES (@fname, @lname, @dob, @years, @active)";
