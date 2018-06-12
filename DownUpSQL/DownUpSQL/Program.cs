@@ -142,7 +142,7 @@ namespace DownUpSQL
 
         static void DownloadData()
         {
-            string connStr = @"Data Source=USEM-527643\GENOTYPE;Initial Catalog=Test1;Integrated Security=True;User ID=Application;Password=Test1234!";
+            string connStr = @"Data Source=USEM-527643\GENOTYPE;Initial Catalog=Test1;Integrated Security=True;User ID=Application;Password=w4rl0Ck5!";
 
             bool tryAgain = true;
             byte filetype;
@@ -322,7 +322,7 @@ namespace DownUpSQL
 
         static void UploadDataFile()
         {
-            string connStr = @"Data Source=USEM-527643\GENOTYPE;Initial Catalog=Test1;Integrated Security=True;User ID=Application;Password=Test1234!";
+            string connStr = @"Data Source=USEM-527643\GENOTYPE;Initial Catalog=Test1;Integrated Security=True;User ID=Application;Password=w4rl0Ck5!";
             string fname;
             string lname;
             DateTime dob;
@@ -670,7 +670,7 @@ namespace DownUpSQL
 
         static void UploadDataLine()
         {
-            string connStr = @"Data Source=USEM-527643\GENOTYPE;Initial Catalog=Test1;Integrated Security=True;User ID=Application;Password=Test1234!";
+            string connStr = @"Data Source=USEM-527643\GENOTYPE;Initial Catalog=Test1;Integrated Security=True;User ID=Application;Password=w4rl0Ck5!";
 
             string fname;
             string lname;
