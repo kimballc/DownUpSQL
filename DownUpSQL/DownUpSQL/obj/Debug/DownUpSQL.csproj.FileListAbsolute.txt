@@ -20,3 +20,14 @@ C:\Users\christian.kimball\Documents\DownUpSQL\DownUpSQL\DownUpSQL\bin\Debug\Dow
 C:\Users\christian.kimball\Documents\DownUpSQL\DownUpSQL\DownUpSQL\bin\Debug\EPPlus.dll
 C:\Users\christian.kimball\Documents\DownUpSQL\DownUpSQL\DownUpSQL\bin\Debug\EPPlus.xml
 C:\Users\christian.kimball\Documents\DownUpSQL\DownUpSQL\DownUpSQL\obj\Debug\DownUpSQL.csproj.CopyComplete
+C:\Users\christian.kimball\source\repos\DownUpSQL\DownUpSQL\DownUpSQL\bin\Debug\DownUpSQL.exe.config
+C:\Users\christian.kimball\source\repos\DownUpSQL\DownUpSQL\DownUpSQL\bin\Debug\DownUpSQL.exe
+C:\Users\christian.kimball\source\repos\DownUpSQL\DownUpSQL\DownUpSQL\bin\Debug\DownUpSQL.pdb
+C:\Users\christian.kimball\source\repos\DownUpSQL\DownUpSQL\DownUpSQL\bin\Debug\EPPlus.dll
+C:\Users\christian.kimball\source\repos\DownUpSQL\DownUpSQL\DownUpSQL\bin\Debug\EPPlus.xml
+C:\Users\christian.kimball\source\repos\DownUpSQL\DownUpSQL\DownUpSQL\obj\Debug\DownUpSQL.csprojAssemblyReference.cache
+C:\Users\christian.kimball\source\repos\DownUpSQL\DownUpSQL\DownUpSQL\obj\Debug\DownUpSQL.csproj.ResolveComReference.cache
+C:\Users\christian.kimball\source\repos\DownUpSQL\DownUpSQL\DownUpSQL\obj\Debug\DownUpSQL.csproj.CoreCompileInputs.cache
+C:\Users\christian.kimball\source\repos\DownUpSQL\DownUpSQL\DownUpSQL\obj\Debug\DownUpSQL.csproj.CopyComplete
+C:\Users\christian.kimball\source\repos\DownUpSQL\DownUpSQL\DownUpSQL\obj\Debug\DownUpSQL.exe
+C:\Users\christian.kimball\source\repos\DownUpSQL\DownUpSQL\DownUpSQL\obj\Debug\DownUpSQL.pdb
